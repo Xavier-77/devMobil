@@ -1,0 +1,90 @@
+body {
+            /*background: linear-gradient(to right, #ff0000, #ff7700, #ffd300, #2cff00, #007bff, #a300ff);*/ /* Dégradé en arc-en-ciel */
+            /*background-color: #c0c0a0;*/
+			margin: 2px;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+        .ligne {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .cadre {
+            border: 1px solid black;
+            padding: 10px;
+            flex: 1;
+            margin-right: 10px;
+        }
+		.fill {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #007bff; /* Couleur de remplissage */
+            transition: height 0.5s ease; /* Animation de remplissage */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+		.combobox {
+		padding: 5px;
+		font-size: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin-right: 10px;
+		width:250px;
+	}
+        .user-icon {
+            position: relative;
+            cursor: pointer;
+            /*width: 20px;*/ /* Largeur de l'icône */
+            /*height: 20px;*/ /* Hauteur de l'icône */
+        }
+
+        .profile-menu.active {
+            display: block;
+        }
+		.profile-menu {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+		.circle {
+            width: 50px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+		.present {
+			font-size: 12px;
+            color: #008000; /* Couleur du texte "Présents" */
+        }
+		.retard {
+			font-size: 12px;
+            color: #FFA500; /* Couleur du texte "Présents" */
+        }
+		.absent {
+			font-size: 12px;
+            color: red; /* Couleur du texte "Présents" */
+        }
+		.siz{
+			font-size: 12px
+		}
